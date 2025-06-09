@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Integrador</title>
+
+  <link id="theme-style" rel="stylesheet" href="style.css">
+  <link rel="icon" href="img-folder/logos/ico.png" type="image/x-icon">
+  <script src="functions.js"></script>
+</head>
+
+<body>
+  <header class="header-nav flex justify-between flex-grow basis-0">
+    <img class="center-img width-2" src="img-folder/logos/logo.svg" alt="wwwapas-logo">
+    <nav 
+      class="flex flex-grow justify-end basis-0">
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+      <a class="cursor-finger" onclick="switchStyle('style.css', 'old-style.css', 'theme-style')" title="Back to the Past <<">Login</a>
+    </nav>
+  </header>
+  <main class="main-introduction flex align-center">
+    <article>
+      <h1 class="wwwapas-header bck-padding-md text-spacing-sm">Somos<br /> <strong class="font-coiny">wwwapas</strong></h1>
+      <p class="em-background inline-block iline-padding-xs text-bold"><em>Social media managers | creadoras de contenido</em></p>
+      <p>Nos encargamos de construir, gestionar y<br /> administrar la comunidad
+        online de tu marca,<br /> empresa o negocio <strong>¡Creamos relaciones<br /> estables y
+        duraderas con tus clientes!</strong>
+      </p>
+    </article>
+    <img class="center-img width-4 bck-padding-md" src="img-folder/foto.png" alt="wwwapas">
+  </main>
+  <div class="aboutus-section flex flex-wrap">
+    <section>
+      <h2 class="em-background inline-block">¡Hola! Somos SOFI & JULIA,</h2>
+      <p>las social media managers, las creadoras de contenido,<br /> las
+        copywriters, las generadoras de leads, las<br /> diseñadoras, las
+        estrategas en marketing digital, las<br /> potenciadoras de ventas,
+        el posicionamiento de tu<br /> marca <strong>¡Somos el complemento que
+        necesitás para<br /> hacer crecer tu marca! ¡Somos wwwapas!</strong>
+      </p>
+    </section>
+    <section>
+      <h2 class="em-background inline-block">GESTIONAMOS TUS REDES SOCIALES</h2>
+      <p>
+        La transformación digital no es solo para grandes<br /> compañías,
+        todas las empresas deben emprenderla<br /> cuanto antes y aquí
+        es donde podemos asistirte.<br /> Armamos estrategias a medida
+        para tu empresa,<br /> marca o producto <strong>¡Aumentá tu presencia 
+        digital y<br/> generá nuevas ventas y contactos!</strong>
+      </p>
+    </section>
+  </div>
+  
+  <hr id="servicios" class="division-spacing">
+  
+  <div class="servicios-section flex">
+    <img class="center-img width-4 bck-padding-md" src="img-folder/img-servicios.svg" alt="Servicios_wwwapas">
+    <ol class="flex flex-column flex-gap-md">
+      <h2>Servicios</h2>
+      <li>Análisis de perfil (Benchmarking)</li>
+      <li>Revisión y activación de canales</li>
+      <li>Gestión, creación y diseño de contenido</li>
+      <li>Respuestas a mensajes y consultas</li>
+      <li>Segmentación de promociones según<br /> el público objetivo la pauta publicitaria</li>
+      <li>Diagramamos un calendario que se ajuste<br /> a los objetivos de la empresa</li>
+      <li><strong class="em-background iline-padding-xs text-bold">¡Empezamos a comunicar!</strong></li>
+    </ol>
+  </div>
+  
+  <hr class="division-spacing">
+  
+  <article class="contact-section flex flex-gap-md">
+    <section class="form-query-section">
+      <p>
+        <strong class="str-background">
+          <span class="iline-padding-xs">¿Quieres que nos</span><br/>
+          <span class="iline-padding-xs">contactemos con vos?</span>
+        </strong>
+      </p>
+      <aside class="em-background inline-block iline-padding-xs text-bold">
+        Envíanos tu consulta>>
+      </aside>
+    </section>
+    <section class="form-section">
+      <form class="flex flex-column" id="contact-form" action="contact-wwwapas.php" method="post">
+        <label class="text-bold" for="name" id="name">Nombre 
+          <span class="color-red shadow-faint">*</span>
+        </label>
+        <input type="text" name="name_input" autocomplete="off" placeholder="Ingrese su Nombre" required>
+
+        <label class="text-bold" for="email" id="email">Email 
+          <span class="color-red shadow-faint">*</span>
+        </label>
+        <input type="text" name="email_input" autocomplete="off" placeholder="Ingrese su E-Mail" required>
+
+        <label class="text-bold" for="message" id="message">Mensaje 
+          <span class="color-red shadow-faint">*</span>
+        </label>
+        <textarea name="message_input" placeholder="Su Mensaje" required></textarea>
+      </form>
+      <div class="flex justify-between">
+        <button class="send-button str-background form-buttons" type="submit" form="contact-form"> Enviar Consulta</button>
+        <button class="reset-button str-background form-buttons" type="reset" form="contact-form"> Borrar</button>
+      </div>
+    </section>
+  </article>
+  
+  <hr id="contacto" class="division-spacing">
+  
+  <footer class="hiperlinks-section flex flex-column flex-gap-md">
+    <section class="social-media-section flex">
+      <h2 class="wwwapas-redes">redes<br/>wwwapas</h2>
+      <a href="https://www.instagram.com/" title="Instagram-WWWapas" target="_blank">
+        <img src="img-folder/logos/instagram-icon.svg" alt="Instagram-WWWapas" />
+      </a>
+      <a href="https://dribbble.com/" title="Dribbble-WWWapas" target="_blank">
+        <img src="img-folder/logos/dribbble-icon.svg" alt="Dribbble-WWWapas" />
+      </a>
+      <a href="https://www.linkedin.com/" title="LinkedIn-WWWapas" target="_blank">
+        <img src="img-folder/logos/linkedin-icon.svg" alt="LinkedIn-WWWapas" />
+      </a>
+      <a href="https://www.facebook.com/" title="Facebook-WWWapas" target="_blank">
+        <img src="img-folder/logos/facebook-icon.svg" alt="Facebook-WWWapas" />
+      </a>
+    </section>
+    <article class="wwwapas-mailto flex">
+      <h3 class="font-coiny">wwwapas</h3>
+      <p><a class="mailto" href="mailto:wwwapas_sm@gmail.com">wwwapas_sm@gmail.com</a></p>
+    </article>
+  </footer>
+  
+  <!------------------------------------------>
+	<a href="#" id="goUp" style="display: none;">
+		<svg width="50" height="50" viewBox="0 -12.5 50 50">
+			<path class="arrowheadUp-shadow" d="M 10, 20 L 25, 5 L 40, 20" />
+			<path class="arrowheadUp" d="M 10, 20 L 25, 5 L 40, 20" />
+		</svg>
+	</a>
+</body>
+
+</html>
